@@ -1,0 +1,3 @@
+C:/Users/lgeov/OneDrive/Documents/Data Analytics Projects/MedicalTriageSystem/cmake-build-debug/CMakeFiles/MedicalTriageSystem.dir
+C:/Users/lgeov/OneDrive/Documents/Data Analytics Projects/MedicalTriageSystem/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/lgeov/OneDrive/Documents/Data Analytics Projects/MedicalTriageSystem/cmake-build-debug/CMakeFiles/rebuild_cache.dir
