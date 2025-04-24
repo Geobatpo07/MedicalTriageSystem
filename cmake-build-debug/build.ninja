@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Users/lgeov/OneDrive/Documents/Data$ Analytics$ Projects/MedicalTriageSystem/cmake-build-debug/
+cmake_ninja_workdir = /cygdrive/c/Users/lgeov/OneDrive/Documents/Data$ Analytics$ Projects/MedicalTriageSystem/cmake-build-debug/
 # =============================================================================
 # Object build statements for EXECUTABLE target MedicalTriageSystem
 
@@ -49,33 +49,33 @@ cmake_ninja_workdir = C$:/Users/lgeov/OneDrive/Documents/Data$ Analytics$ Projec
 
 build cmake_object_order_depends_target_MedicalTriageSystem: phony || .
 
-build CMakeFiles/MedicalTriageSystem.dir/src/Patient.cpp.obj: CXX_COMPILER__MedicalTriageSystem_unscanned_Debug C$:/Users/lgeov/OneDrive/Documents/Data$ Analytics$ Projects/MedicalTriageSystem/src/Patient.cpp || cmake_object_order_depends_target_MedicalTriageSystem
-  DEP_FILE = CMakeFiles\MedicalTriageSystem.dir\src\Patient.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  INCLUDES = -I"C:/Users/lgeov/OneDrive/Documents/Data Analytics Projects/MedicalTriageSystem/include"
-  OBJECT_DIR = CMakeFiles\MedicalTriageSystem.dir
-  OBJECT_FILE_DIR = CMakeFiles\MedicalTriageSystem.dir\src
+build CMakeFiles/MedicalTriageSystem.dir/src/Patient.cpp.o: CXX_COMPILER__MedicalTriageSystem_unscanned_Debug /cygdrive/c/Users/lgeov/OneDrive/Documents/Data$ Analytics$ Projects/MedicalTriageSystem/src/Patient.cpp || cmake_object_order_depends_target_MedicalTriageSystem
+  DEP_FILE = CMakeFiles/MedicalTriageSystem.dir/src/Patient.cpp.o.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I"/cygdrive/c/Users/lgeov/OneDrive/Documents/Data Analytics Projects/MedicalTriageSystem/include"
+  OBJECT_DIR = CMakeFiles/MedicalTriageSystem.dir
+  OBJECT_FILE_DIR = CMakeFiles/MedicalTriageSystem.dir/src
 
-build CMakeFiles/MedicalTriageSystem.dir/src/TriageSystem.cpp.obj: CXX_COMPILER__MedicalTriageSystem_unscanned_Debug C$:/Users/lgeov/OneDrive/Documents/Data$ Analytics$ Projects/MedicalTriageSystem/src/TriageSystem.cpp || cmake_object_order_depends_target_MedicalTriageSystem
-  DEP_FILE = CMakeFiles\MedicalTriageSystem.dir\src\TriageSystem.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  INCLUDES = -I"C:/Users/lgeov/OneDrive/Documents/Data Analytics Projects/MedicalTriageSystem/include"
-  OBJECT_DIR = CMakeFiles\MedicalTriageSystem.dir
-  OBJECT_FILE_DIR = CMakeFiles\MedicalTriageSystem.dir\src
+build CMakeFiles/MedicalTriageSystem.dir/src/TriageSystem.cpp.o: CXX_COMPILER__MedicalTriageSystem_unscanned_Debug /cygdrive/c/Users/lgeov/OneDrive/Documents/Data$ Analytics$ Projects/MedicalTriageSystem/src/TriageSystem.cpp || cmake_object_order_depends_target_MedicalTriageSystem
+  DEP_FILE = CMakeFiles/MedicalTriageSystem.dir/src/TriageSystem.cpp.o.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I"/cygdrive/c/Users/lgeov/OneDrive/Documents/Data Analytics Projects/MedicalTriageSystem/include"
+  OBJECT_DIR = CMakeFiles/MedicalTriageSystem.dir
+  OBJECT_FILE_DIR = CMakeFiles/MedicalTriageSystem.dir/src
 
-build CMakeFiles/MedicalTriageSystem.dir/src/utils.cpp.obj: CXX_COMPILER__MedicalTriageSystem_unscanned_Debug C$:/Users/lgeov/OneDrive/Documents/Data$ Analytics$ Projects/MedicalTriageSystem/src/utils.cpp || cmake_object_order_depends_target_MedicalTriageSystem
-  DEP_FILE = CMakeFiles\MedicalTriageSystem.dir\src\utils.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  INCLUDES = -I"C:/Users/lgeov/OneDrive/Documents/Data Analytics Projects/MedicalTriageSystem/include"
-  OBJECT_DIR = CMakeFiles\MedicalTriageSystem.dir
-  OBJECT_FILE_DIR = CMakeFiles\MedicalTriageSystem.dir\src
+build CMakeFiles/MedicalTriageSystem.dir/src/utils.cpp.o: CXX_COMPILER__MedicalTriageSystem_unscanned_Debug /cygdrive/c/Users/lgeov/OneDrive/Documents/Data$ Analytics$ Projects/MedicalTriageSystem/src/utils.cpp || cmake_object_order_depends_target_MedicalTriageSystem
+  DEP_FILE = CMakeFiles/MedicalTriageSystem.dir/src/utils.cpp.o.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I"/cygdrive/c/Users/lgeov/OneDrive/Documents/Data Analytics Projects/MedicalTriageSystem/include"
+  OBJECT_DIR = CMakeFiles/MedicalTriageSystem.dir
+  OBJECT_FILE_DIR = CMakeFiles/MedicalTriageSystem.dir/src
 
-build CMakeFiles/MedicalTriageSystem.dir/main.cpp.obj: CXX_COMPILER__MedicalTriageSystem_unscanned_Debug C$:/Users/lgeov/OneDrive/Documents/Data$ Analytics$ Projects/MedicalTriageSystem/main.cpp || cmake_object_order_depends_target_MedicalTriageSystem
-  DEP_FILE = CMakeFiles\MedicalTriageSystem.dir\main.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  INCLUDES = -I"C:/Users/lgeov/OneDrive/Documents/Data Analytics Projects/MedicalTriageSystem/include"
-  OBJECT_DIR = CMakeFiles\MedicalTriageSystem.dir
-  OBJECT_FILE_DIR = CMakeFiles\MedicalTriageSystem.dir
+build CMakeFiles/MedicalTriageSystem.dir/main.cpp.o: CXX_COMPILER__MedicalTriageSystem_unscanned_Debug /cygdrive/c/Users/lgeov/OneDrive/Documents/Data$ Analytics$ Projects/MedicalTriageSystem/main.cpp || cmake_object_order_depends_target_MedicalTriageSystem
+  DEP_FILE = CMakeFiles/MedicalTriageSystem.dir/main.cpp.o.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I"/cygdrive/c/Users/lgeov/OneDrive/Documents/Data Analytics Projects/MedicalTriageSystem/include"
+  OBJECT_DIR = CMakeFiles/MedicalTriageSystem.dir
+  OBJECT_FILE_DIR = CMakeFiles/MedicalTriageSystem.dir
 
 
 # =============================================================================
@@ -85,12 +85,13 @@ build CMakeFiles/MedicalTriageSystem.dir/main.cpp.obj: CXX_COMPILER__MedicalTria
 #############################################
 # Link the executable MedicalTriageSystem.exe
 
-build MedicalTriageSystem.exe: CXX_EXECUTABLE_LINKER__MedicalTriageSystem_Debug CMakeFiles/MedicalTriageSystem.dir/src/Patient.cpp.obj CMakeFiles/MedicalTriageSystem.dir/src/TriageSystem.cpp.obj CMakeFiles/MedicalTriageSystem.dir/src/utils.cpp.obj CMakeFiles/MedicalTriageSystem.dir/main.cpp.obj
+build MedicalTriageSystem.exe: CXX_EXECUTABLE_LINKER__MedicalTriageSystem_Debug CMakeFiles/MedicalTriageSystem.dir/src/Patient.cpp.o CMakeFiles/MedicalTriageSystem.dir/src/TriageSystem.cpp.o CMakeFiles/MedicalTriageSystem.dir/src/utils.cpp.o CMakeFiles/MedicalTriageSystem.dir/main.cpp.o
   FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\MedicalTriageSystem.dir
-  POST_BUILD = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\lgeov\OneDrive\Documents\Data Analytics Projects\MedicalTriageSystem\cmake-build-debug" && "C:\Users\lgeov\OneDrive\Documents\Data Analytics Projects\MedicalTriageSystem\.venv\Scripts\python.exe" "C:/Users/lgeov/OneDrive/Documents/Data Analytics Projects/MedicalTriageSystem/scripts/train_model.py""
-  PRE_LINK = cd .
+  LINK_FLAGS = -Wl,--enable-auto-import
+  LINK_LIBRARIES = -lstdc++fs
+  OBJECT_DIR = CMakeFiles/MedicalTriageSystem.dir
+  POST_BUILD = :
+  PRE_LINK = :
   TARGET_FILE = MedicalTriageSystem.exe
   TARGET_IMPLIB = libMedicalTriageSystem.dll.a
   TARGET_PDB = MedicalTriageSystem.exe.dbg
@@ -100,7 +101,7 @@ build MedicalTriageSystem.exe: CXX_EXECUTABLE_LINKER__MedicalTriageSystem_Debug 
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\lgeov\OneDrive\Documents\Data Analytics Projects\MedicalTriageSystem\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2025.1\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = /bin/sh CMakeFiles/edit_cache.dir/utility.sh c6ad1c104841c97d
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -111,7 +112,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\lgeov\OneDrive\Documents\Data Analytics Projects\MedicalTriageSystem\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2025.1\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"C:\Users\lgeov\OneDrive\Documents\Data Analytics Projects\MedicalTriageSystem" -B"C:\Users\lgeov\OneDrive\Documents\Data Analytics Projects\MedicalTriageSystem\cmake-build-debug""
+  COMMAND = /bin/sh CMakeFiles/rebuild_cache.dir/utility.sh a9fc7bb2f116ac9b
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -129,14 +130,7 @@ build MedicalTriageSystem: phony MedicalTriageSystem.exe
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/lgeov/OneDrive/Documents/Data Analytics Projects/MedicalTriageSystem/cmake-build-debug
-
-build codegen: phony
-
-# =============================================================================
-
-#############################################
-# Folder: C:/Users/lgeov/OneDrive/Documents/Data Analytics Projects/MedicalTriageSystem/cmake-build-debug
+# Folder: /cygdrive/c/Users/lgeov/OneDrive/Documents/Data Analytics Projects/MedicalTriageSystem/cmake-build-debug
 
 build all: phony MedicalTriageSystem.exe
 
@@ -147,14 +141,14 @@ build all: phony MedicalTriageSystem.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/FindPython3.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/FindPython/Support.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Internal/CMakeCLinkerInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Linker/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Linker/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Linker/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Platform/Linker/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Platform/WindowsPaths.cmake C$:/Users/lgeov/OneDrive/Documents/Data$ Analytics$ Projects/MedicalTriageSystem/CMakeLists.txt CMakeCache.txt CMakeFiles/3.31.6/CMakeCCompiler.cmake CMakeFiles/3.31.6/CMakeCXXCompiler.cmake CMakeFiles/3.31.6/CMakeRCCompiler.cmake CMakeFiles/3.31.6/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/CMakeCInformation.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/CMakeCXXInformation.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/CMakeCommonLanguageInclude.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/CMakeGenericSystem.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/CMakeInitializeConfigs.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/CMakeLanguageInformation.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/CMakeRCInformation.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/CMakeSystemSpecificInformation.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/CMakeSystemSpecificInitialize.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/Compiler/CMakeCommonCompilerMacros.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/Compiler/GNU-C.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/Compiler/GNU-CXX.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/Compiler/GNU.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/Internal/CMakeCLinkerInformation.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/Internal/CMakeCXXLinkerInformation.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/Internal/CMakeCommonLinkerInformation.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/Linker/GNU-C.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/Linker/GNU-CXX.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/Linker/GNU.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/Platform/CYGWIN-GNU-C.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/Platform/CYGWIN-GNU-CXX.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/Platform/CYGWIN-GNU.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/Platform/CYGWIN-Initialize.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/Platform/CYGWIN-windres.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/Platform/CYGWIN.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/Platform/Linker/CYGWIN-GNU-C.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/Platform/Linker/CYGWIN-GNU-CXX.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/Platform/Linker/CYGWIN-GNU.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/Platform/Linker/GNU.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/Platform/UnixPaths.cmake /cygdrive/c/Users/lgeov/OneDrive/Documents/Data$ Analytics$ Projects/MedicalTriageSystem/CMakeLists.txt CMakeCache.txt CMakeFiles/3.31.6/CMakeCCompiler.cmake CMakeFiles/3.31.6/CMakeCXXCompiler.cmake CMakeFiles/3.31.6/CMakeRCCompiler.cmake CMakeFiles/3.31.6/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/FindPython3.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/FindPython/Support.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Internal/CMakeCLinkerInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Linker/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Linker/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Linker/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Platform/Linker/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.1/bin/cmake/win/x64/share/cmake-3.31/Modules/Platform/WindowsPaths.cmake C$:/Users/lgeov/OneDrive/Documents/Data$ Analytics$ Projects/MedicalTriageSystem/CMakeLists.txt CMakeCache.txt CMakeFiles/3.31.6/CMakeCCompiler.cmake CMakeFiles/3.31.6/CMakeCXXCompiler.cmake CMakeFiles/3.31.6/CMakeRCCompiler.cmake CMakeFiles/3.31.6/CMakeSystem.cmake: phony
+build /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/CMakeCInformation.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/CMakeCXXInformation.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/CMakeCommonLanguageInclude.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/CMakeGenericSystem.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/CMakeInitializeConfigs.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/CMakeLanguageInformation.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/CMakeRCInformation.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/CMakeSystemSpecificInformation.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/CMakeSystemSpecificInitialize.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/Compiler/CMakeCommonCompilerMacros.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/Compiler/GNU-C.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/Compiler/GNU-CXX.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/Compiler/GNU.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/Internal/CMakeCLinkerInformation.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/Internal/CMakeCXXLinkerInformation.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/Internal/CMakeCommonLinkerInformation.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/Linker/GNU-C.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/Linker/GNU-CXX.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/Linker/GNU.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/Platform/CYGWIN-GNU-C.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/Platform/CYGWIN-GNU-CXX.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/Platform/CYGWIN-GNU.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/Platform/CYGWIN-Initialize.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/Platform/CYGWIN-windres.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/Platform/CYGWIN.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/Platform/Linker/CYGWIN-GNU-C.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/Platform/Linker/CYGWIN-GNU-CXX.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/Platform/Linker/CYGWIN-GNU.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/Platform/Linker/GNU.cmake /cygdrive/c/Users/lgeov/AppData/Local/JetBrains/CLion2025.1/cygwin_cmake/share/cmake-3.31.6/Modules/Platform/UnixPaths.cmake /cygdrive/c/Users/lgeov/OneDrive/Documents/Data$ Analytics$ Projects/MedicalTriageSystem/CMakeLists.txt CMakeCache.txt CMakeFiles/3.31.6/CMakeCCompiler.cmake CMakeFiles/3.31.6/CMakeCXXCompiler.cmake CMakeFiles/3.31.6/CMakeRCCompiler.cmake CMakeFiles/3.31.6/CMakeSystem.cmake: phony
 
 
 #############################################

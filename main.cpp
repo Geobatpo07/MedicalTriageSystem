@@ -3,49 +3,46 @@
 //
 
 #include <iostream>
-#include "../include/patient.h"
-#include "../include/triagesystem.h"
+#include "../include/Patient.h"
 
 int main() {
-    std::cout << "=== 🏥 Système de Triage Médical ===\n";
+    std::cout << "=== 🏥 Medical Triage System ===\n";
 
-    // Exemple de création d'un patient
+    // Example of creating a patient
     Patient p(
-        "Alice",                    // Prénom
-        "Martin",                   // Nom
-        "123 rue des Lilas",        // Adresse
-        "Pneumonie",                // Maladie
-        true,                       // Fièvre
-        true,                       // Toux
+        "Alice",                    // First Name
+        "Martin",                   // Last Name
+        "123 Lily Street",          // Address
+        "Pneumonia",                // Disease
+        true,                       // Fever
+        true,                       // Cough
         true,                       // Fatigue
-        true,                       // Difficulté respiratoire
-        75,                         // Âge
-        "Femme",                    // Sexe
-        "Élevée",                   // Pression artérielle
-        "Élevé",                    // Cholestérol
-        "Guérison en cours"         // Issue
+        true,                       // Difficulty Breathing
+        75,                         // Age
+        "Female",                   // Gender
+        "High",                     // Blood Pressure
+        "High",                     // Cholesterol
+        "positive"                  // Outcome
     );
 
-    // Application du système de triage
-    TriageSystem::assignPriorityAndCategory(p);
-
-    // Affichage des détails du patient (avec priorité et catégorie assignées)
+    // The triage category is evaluated internally during construction or save
+    // Display patient's details (with priority and category assigned)
     p.printDetails();
 
-    // Sauvegarde dans le CSV des patients
+    // Save to patients CSV
     p.saveToCSV("data/patients.csv");
 
-    // Mise à jour du fichier des maladies
+    // Update diseases CSV
     Patient::insertPatientAndUpdateDiseases(p);
 
-    // Lecture et affichage de tous les patients enregistrés
-    std::cout << "\n🔎 Tous les patients enregistrés :\n";
+    // Read and display all registered patients
+    std::cout << "\nAll registered patients:\n";
     Patient::readPatientsFromCSV("data/patients.csv");
 
-    // Affichage trié par niveau d'urgence
-    std::cout << "\n📊 Patients triés par niveau d'urgence :\n";
+    // Display sorted patients by triage priority
+    std::cout << "\nPatients sorted by triage priority:\n";
     Patient::displaySortedPatientsByTriage("data/patients.csv");
 
-    std::cout << "\n✅ Fin du programme.\n";
+    std::cout << "\nEnd of the program.\n";
     return 0;
 }

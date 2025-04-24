@@ -1,7 +1,3 @@
-//
-// Created by Geovany on 4/23/2025.
-//
-
 #include "../include/TriageSystem.h"
 #include <fstream>
 #include <iostream>
@@ -13,12 +9,10 @@
 std::map<std::string, double> TriageAlgorithm::weights;
 
 void TriageAlgorithm::loadWeights(const std::string& weightsFile) {
-    // Lire le fichier JSON contenant les poids
     std::ifstream file(weightsFile);
     nlohmann::json json_weights;
     file >> json_weights;
 
-    // Charger les poids dans la map
     for (auto& element : json_weights.items()) {
         weights[element.key()] = element.value();
     }
@@ -37,19 +31,20 @@ std::vector<PatientRecord> TriageAlgorithm::loadPatients(const std::string& file
         std::getline(ss, p.id, ',');
         std::getline(ss, p.firstName, ',');
         std::getline(ss, p.lastName, ',');
-        std::getline(ss, field, ','); // Skip address
-        std::getline(ss, field, ','); // Skip disease
+        std::getline(ss, field, ','); // address
+        std::getline(ss, field, ','); // disease
         std::getline(ss, field, ','); p.fever = (field == "1");
         std::getline(ss, field, ','); p.cough = (field == "1");
         std::getline(ss, field, ','); p.fatigue = (field == "1");
         std::getline(ss, field, ','); p.difficultyBreathing = (field == "1");
         std::getline(ss, field, ','); p.age = std::stoi(field);
-        std::getline(ss, field, ','); // Gender
+        std::getline(ss, field, ','); // gender
         std::getline(ss, p.bloodPressure, ',');
         std::getline(ss, p.cholesterol, ',');
-        std::getline(ss, field, ','); // Outcome
-        std::getline(ss, field, ','); // Registration date
-        std::getline(ss, p.triageTime, ','); // Triage time
+        std::getline(ss, field, ','); // outcome
+        p.outcome = field;  // Capture the outcome (e.g., Positive/Negative)
+        std::getline(ss, field, ','); // registration date
+        std::getline(ss, p.triageTime, ',');
 
         p.score = computeTriageScore(p);
         p.triageCategory = determineCategory(p.score);
@@ -60,19 +55,35 @@ std::vector<PatientRecord> TriageAlgorithm::loadPatients(const std::string& file
     return patients;
 }
 
-int TriageAlgorithm::computeTriageScore(const PatientRecord& p) {
+int TriageAlgorithm::computePriorityScore(bool fever, bool cough, bool fatigue,
+                                          bool difficultyBreathing, int age,
+                                          const std::string& bloodPressure,
+                                          const std::string& cholesterol,
+                                          const std::string& outcome) {
     int score = 0;
+    score += fever ? weights["Fever"] : 0;
+    score += cough ? weights["Cough"] : 0;
+    score += fatigue ? weights["Fatigue"] : 0;
+    score += difficultyBreathing ? weights["DifficultyBreathing"] : 0;
+    score += (age >= 65) ? weights["Age"] : 0;
+    score += (bloodPressure == "High") ? weights["BloodPressure"] : 0;
+    score += (cholesterol == "High") ? weights["Cholesterol"] : 0;
 
-    // Calculer le score avec les poids du modèle Random Forest
-    score += p.fever ? weights["Fever"] : 0;
-    score += p.cough ? weights["Cough"] : 0;
-    score += p.fatigue ? weights["Fatigue"] : 0;
-    score += p.difficultyBreathing ? weights["DifficultyBreathing"] : 0;
-    score += (p.age >= 65) ? weights["Age"] : 0;
-    score += (p.bloodPressure == "High") ? weights["BloodPressure"] : 0;
-    score += (p.cholesterol == "High") ? weights["Cholesterol"] : 0;
+    // Normalisation pour ajuster le score dans une plage de 1 à 10
+    double normalizedScore = score / 0.1;
+    score += std::max(1, (int)normalizedScore);
+
+    // Ajouter un bonus au score si l'outcome est "Positive"
+    if (outcome == "Positive") {
+        score += 5; // Ajoute un poids supplémentaire pour les cas positifs
+    }
 
     return score;
+}
+
+int TriageAlgorithm::computeTriageScore(const PatientRecord& p) {
+    return computePriorityScore(p.fever, p.cough, p.fatigue, p.difficultyBreathing,
+                                p.age, p.bloodPressure, p.cholesterol, p.outcome);
 }
 
 std::string TriageAlgorithm::determineCategory(int score) {
@@ -84,11 +95,12 @@ std::string TriageAlgorithm::determineCategory(int score) {
 void TriageAlgorithm::processAndDisplayTriage(const std::string& filename) {
     auto patients = loadPatients(filename);
 
+    // Trier les patients par score de priorité
     std::sort(patients.begin(), patients.end(), [](const PatientRecord& a, const PatientRecord& b) {
         return a.score > b.score;
     });
 
-    std::cout << "\n🔍 Résultat du triage médical :\n";
+    std::cout << "\nRésultat du triage médical :\n";
     for (const auto& p : patients) {
         std::cout << "ID: " << p.id
                   << " | " << p.firstName << " " << p.lastName
@@ -97,4 +109,3 @@ void TriageAlgorithm::processAndDisplayTriage(const std::string& filename) {
                   << " | Triage Time: " << p.triageTime << "\n";
     }
 }
-

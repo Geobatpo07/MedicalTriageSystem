@@ -23,6 +23,7 @@ struct PatientRecord {
     int score;
     std::string triageCategory;
     std::string triageTime;
+    std::string outcome;  // Ajout du champ outcome
 };
 
 // Classe pour gérer la logique du triage
@@ -33,9 +34,15 @@ public:
     static int computeTriageScore(const PatientRecord& p);
     static std::string determineCategory(int score);
     static void processAndDisplayTriage(const std::string& filename);
+    static int computePriorityScore(bool fever, bool cough, bool fatigue,
+                                    bool difficultyBreathing, int age,
+                                    const std::string& bloodPressure,
+                                    const std::string& cholesterol,
+                                    const std::string& outcome);  // Mise à jour
 
 private:
     static std::map<std::string, double> weights; // Poids pour chaque caractéristique
+
 };
 
-#endif
+#endif // TRIAGESYSTEM_H

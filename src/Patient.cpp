@@ -1,7 +1,3 @@
-//
-// Created by Geovany on 4/23/2025.
-//
-
 #include "../include/patient.h"
 #include "../include/utils.h"
 #include "../include/triagesystem.h"
@@ -12,6 +8,11 @@
 #include <map>
 #include <vector>
 #include <algorithm>
+#include <filesystem>
+
+namespace fs = std::filesystem;
+
+const std::string DATA_DIR = "data/";
 
 Patient::Patient(std::string firstName, std::string lastName, std::string address,
                  std::string disease, bool fever, bool cough, bool fatigue,
@@ -28,7 +29,7 @@ Patient::Patient(std::string firstName, std::string lastName, std::string addres
 }
 
 void Patient::saveToCSV(const std::string& filename) const {
-    std::ofstream file(filename, std::ios::app);
+    std::ofstream file(DATA_DIR + filename, std::ios::app);
     if (file.is_open()) {
         file << id << "," << firstName << "," << lastName << "," << address << ","
              << disease << "," << fever << "," << cough << "," << fatigue << ","
@@ -37,12 +38,12 @@ void Patient::saveToCSV(const std::string& filename) const {
              << registrationDate << "," << triageCategory << "\n";
         file.close();
     } else {
-        std::cerr << "Erreur lors de l'ouverture du fichier CSV pour l'enregistrement.\n";
+        std::cerr << "Erreur lors de l'ouverture du fichier " << filename << " pour l'enregistrement.\n";
     }
 }
 
 void Patient::readPatientsFromCSV(const std::string& filename) {
-    std::ifstream file(filename);
+    std::ifstream file(DATA_DIR + filename);
     std::string line;
     if (file.is_open()) {
         std::cout << "📄 Liste des patients enregistrés :\n";
@@ -61,12 +62,12 @@ void Patient::readPatientsFromCSV(const std::string& filename) {
 }
 
 int Patient::getPriorityScore() const {
-    return computePriorityScore(fever, cough, fatigue, difficultyBreathing, age, bloodPressure, cholesterol);
+    return TriageAlgorithm::computePriorityScore(fever, cough, fatigue, difficultyBreathing, age, bloodPressure, cholesterol, outcome);
 }
 
 void Patient::evaluateTriageCategory() {
     int score = getPriorityScore();
-    triageCategory = determineTriageCategory(score);
+    triageCategory = TriageAlgorithm::determineCategory(score);
 }
 
 void Patient::printDetails() const {
@@ -94,7 +95,7 @@ std::string Patient::getTriageCategory() const {
 }
 
 void Patient::displaySortedPatientsByTriage(const std::string& filename) {
-    std::ifstream file(filename);
+    std::ifstream file(DATA_DIR + filename);
     std::vector<std::vector<std::string>> patients;
     std::string line;
 
@@ -128,7 +129,7 @@ void Patient::displaySortedPatientsByTriage(const std::string& filename) {
 }
 
 void Patient::insertPatientAndUpdateDiseases(const Patient& patient) {
-    std::ofstream patientFile("data/patient.csv", std::ios::app);
+    std::ofstream patientFile(DATA_DIR + "patient.csv", std::ios::app);
     if (patientFile.is_open()) {
         patientFile << patient.id << "," << patient.firstName << "," << patient.lastName << ","
                     << patient.address << "," << patient.disease << ","
@@ -142,7 +143,7 @@ void Patient::insertPatientAndUpdateDiseases(const Patient& patient) {
         std::cerr << "Erreur lors de l'écriture dans patient.csv\n";
     }
 
-    std::ofstream diseasesFile("data/diseases.csv", std::ios::app);
+    std::ofstream diseasesFile(DATA_DIR + "diseases.csv", std::ios::app);
     if (diseasesFile.is_open()) {
         diseasesFile << patient.disease << "," << patient.fever << "," << patient.cough << ","
                      << patient.fatigue << "," << patient.difficultyBreathing << ","
